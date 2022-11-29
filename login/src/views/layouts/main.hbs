@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poketch.io</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+
+    <nav class="flex py-5 text-white px-24" style="background-color: #191919;">
+        <div class="w-1/2 px-12 mr-auto">
+            <h1 class="text-xl"><b>Bienvenido a Poketch.io</b></h1>
+        </div>
+        <ul class="w-1/1 px-16 ml-auto flex justify-end pt-1">
+            {{#if name}}
+            <li class="nav-item px-4">
+                <h5 class="font-semibold">Hola, {{name}}.</h5>
+            </li>
+
+            <li class="nav-item px-4">
+                    <a href="/logout" class="nav-link text-color black font-semibold border-2 border-black py-3 px-4 rounded-md" style="background-color: rgb(128, 0, 0);">Cerrar Sesion</a>
+            </li>
+            
+            {{else}}
+                <li class="nav-item px-4">  
+                    <a href="/login" class="nav-link font-semibold">Iniciar Sesion</a>
+                </li>
+
+                <li class="nav-item px-4">
+                    <a href="/register" class="nav-link font-semibold border-2 border-white py-3 px-4 rounded-md">Registrar</a>
+                </li>
+            {{/if}}
+        </ul>
+    </nav>
+
+    {{{body}}}
+</body>
+</html>
