@@ -9,7 +9,7 @@
             "port": 3306,
             "driver": "MySQL",
             "name": "admin",
-            "database": "bdpialenmo",
+            "database": "mark1",
             "username": "admin",
             "password": "admin"
         }

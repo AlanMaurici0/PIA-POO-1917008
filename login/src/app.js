@@ -28,7 +28,7 @@ app.use(myconnection(mysql, {
     user: 'admin',
     password: 'admin',
     port: '3306', //127.0.0.1
-    database: 'bdpialenmo'
+    database: 'mark1'
 }));
 
 app.use(session({
